@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Index Page</title>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our Site</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Key Features</h2>
+      <ol type="I">
+        <li>Responsive Design</li>
+        <li>Accessibility First</li>
+        <li>Fast Performance</li>
+        <li>Easy Customization</li>
+        <li>Cross-Browser Support</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Featured Photo</h2>
+      <img
+        src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg"
+        alt="Scenic mountain landscape from Pexels"
+        width="600"
+      >
+    </section>
+
+    <section>
+      <h2>Contact List</h2>
+      <table>
+        <caption>Our Top 5 Contacts</caption>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Mobile</th>
+            <th scope="col">Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">John Doe</th>
+            <td>123 Main St, Lagos</td>
+            <td>+234 801 234 5678</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <th scope="row">Jane Smith</th>
+            <td>456 Market Ave, Abuja</td>
+            <td>+234 802 345 6789</td>
+            <td>jane@example.com</td>
+          </tr>
+          <tr>
+            <th scope="row">Aliyu Bello</th>
+            <td>789 Freedom Rd, Port Harcourt</td>
+            <td>+234 803 456 7890</td>
+            <td>aliyu@example.com</td>
+          </tr>
+          <tr>
+            <th scope="row">Ngozi Okafor</th>
+            <td>12 Unity St, Enugu</td>
+            <td>+234 804 567 8901</td>
+            <td>ngozi@example.com</td>
+          </tr>
+          <tr>
+            <th scope="row">Tunde Balogun</th>
+            <td>34 Heritage Ln, Ibadan</td>
+            <td>+234 805 678 9012</td>
+            <td>tunde@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Register Now</h2>
+      <form action="#" method="post">
+        <div>
+          <label for="name">Full Name <span aria-hidden="true">*</span></label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your full name"
+            required
+            pattern="[A-Za-z\s]{2,}"
+          >
+        </div>
+<br/>
+        <div>
+          <label for="email">Email Address <span aria-hidden="true">*</span></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            required
+          >
+        </div>
+<br/>
+        <div>
+          <label for="password">Password <span aria-hidden="true">*</span></label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="At least 8 characters"
+            required
+            minlength="8"
+          >
+        </div>
+ <br/>
+        <div>
+          <label for="dob">Date of Birth <span aria-hidden="true">*</span></label>
+          <input
+            type="date"
+            id="dob"
+            name="dob"
+            required
+          >
+        </div>
+<br/>
+        <div>
+          <label for="country">Country <span aria-hidden="true">*</span></label>
+          <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="ng">Nigeria</option>
+            <option value="gh">Ghana</option>
+            <option value="ke">Kenya</option>
+            <option value="za">South Africa</option>
+          </select>
+        </div>
+<br/>
+        <fieldset>
+          <legend>Gender <span aria-hidden="true">*</span></legend>
+          <div>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+          </div>
+          <div>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+          </div>
+          <div>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+          </div>
+        </fieldset>
+<br/>
+        <fieldset>
+          <legend>Interests</legend>
+          <div>
+            <input type="checkbox" id="news" name="interests" value="news">
+            <label for="news">Newsletters</label>
+          </div>
+          <div>
+            <input type="checkbox" id="updates" name="interests" value="updates">
+            <label for="updates">Product Updates</label>
+          </div>
+          <div>
+            <input type="checkbox" id="offers" name="interests" value="offers">
+            <label for="offers">Special Offers</label>
+          </div>
+        </fieldset>
+<br/>
+        <div>
+          <button type="submit">Submit Registration</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ronke</p>
+  </footer>
+</body>
+</html>
